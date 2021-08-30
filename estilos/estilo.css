@@ -1,3 +1,311 @@
+* {
+	margin: 0;
+	padding: 0;
+	}
+	a:link,a:visited, a:active {
+		text-decoration:none;
+}
+/*Estructura de fondo */
 body {
-    background-color: black;
+	background-color: black;
+}
+.fondito {
+		background-color: #d7e468;
+		border: 50px solid transparent;
+	}
+	.fondito2 {
+		background-color: black;
+	}
+
+.tapiz {
+	background-color: black;
+	border-radius: 40px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+/*Menu */
+.logo {
+	text-align: center;
+	float: left;
+	width: 20%;
+	margin-left: 10x;
+}
+.menuhome nav li {
+	padding-top: 30px;
+	padding-bottom: 22px;
+	float:left;
+	width: 11%;
+	border: 0px;
+	color: white;
+	list-style:none;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+}
+.menuhome nav li:hover {
+	background-color: #d7e468;
+  }
+
+  /*FIN Menu */
+
+
+/*HOME */
+.portada {
+	text-align: center;
+	background-image: url(../img/imagenportada.png);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-position: bottom;
+
+}
+.textoBienvenida {
+	margin-top: 7%;
+}
+.titulo {
+	text-align: center;
+}
+.piezas {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: black;
+}
+.piezaContenedores {
+	padding: 10px 15px 0px 15px;
+}
+.verMas {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
+	
+}
+.boton {
+	border: none;
+	background: #ddb137;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 500ms ease;
+	}
+.boton:hover {
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #212529;
+	}
+
+.verConcepto {
+	text-align: center;
+	padding-bottom: 20px;
+	background-color: black;
+}
+.separador {
+	height: 40px;
+	background-color: #212529;
+}
+
+.manifiestoEnHome {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align:center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 12px dotted #212529;
+	border-top: 12px dotted #212529;
+}
+
+section.news {
+	background: BLACK;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap: wrap;
+}
+.newsletter {
+	padding-right: 20px;
+	padding-left: 40px;
+	padding-bottom: 20px;
+	width: 400px;
+	padding-right: 5%;
+}
+.textNews {
+	text-align: right;
+	padding-left:2%;
+}
+.imgnews {
+	padding-left: 2%;
+	padding-top: 10px;
+}
+/*FIN HOME */
+/************************************************ESTRUCTURA GRILLA*/
+#tapizGrilla {
+	display: grid;
+	grid-template-areas: 
+	"logo" "menuhome" "menuhome"
+	"portada" "portada" "portada"
+	"moduloPiezas" "moduloPiezas" "moduloPiezas"
+	"video" "video" "video"
+	"manifiestoEnHome" "manifiestoEnHome" "manifiestoEnHome"
+	"news" "textNews" "newsletter"
+	"redesSociales" "redesSociales" "redesSociales"
+	"footer" "footer" "footer";
+	background-color: black;
+	border-radius: 40px;
+}
+/************************************************ESTRUCTURA GRILLA*/
+
+
+/*Haches*/
+h1 {
+	color: white;
+	font-size: 80px;
+	font-family: 'Merriweather', serif;
+	animation-duration: 5s;
+	animation-name: tituloAparecer;
+}
+@keyframes tituloAparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+h3 {
+	color: White;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+h2 {
+	color: white;
+	font-size: 60px;
+	font-family: 'Merriweather', serif;
+	animation-duration: 5s;
+	animation-name: tituloAparecer;
+}
+@keyframes tituloAparecer {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+h4 {
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+h5 {
+	color: white;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 1,400;
+}
+h6 {
+	color: White;
+	font-size: 40px;
+	font-family: 'Merriweather', serif;
+	font-weight: lighter;
+}
+
+ 
+
+/*Común a todas las paginas */
+.redesSociales {
+	display: flex;
+	align-items:center;
+	align-content: center;
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 12px dotted #d7e468;
+}
+.iconRedesSociales {
+	margin-top: 10px;
+	padding-left: 10px;
+	height: 40px;
+	width: 40px;
+}
+.textoredes {
+	margin-top: 10px;
+	padding-left: 10px;
+}
+fieldset {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 2px;
+	color: white;
+	border: 0px;
+}
+
+input {
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	border-radius: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+}
+.footer {
+	float: left;
+	margin-top: 10px;
+	margin-left: 50%;
+	font-size: 20px;
+	color: white;
+}
+/*FIN Común a todas las paginas */
+
+/*Página Portfolio */
+.portfolio {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 317px 317px 317px;
+	grid-template-rows: 448px 448px 448px 448px;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	margin-top: 200px;
+	justify-content: center;
+	align-items: center;
+}
+.MuestraImagen {
+	height: 448px;
+	width: 317px;
+}
+/*Página Concepto */
+.textoManifiesto {
+	text-align: center;
+}
+.videoConcepto {
+	margin-top: 170px;
+	text-align: center;
+}
+/*Página tienda */
+.tienda {
+	margin-top: 170px;
+	text-align: center;
+}
+/*Página About me */
+#AboutME {
+	display: flex;
+	margin-top: 200px;
+	text-align: justify;
+	padding: 3px 3px 3px 10px;
+	margin-right: 15px;
+}
+.imagenAboutMe {
+	margin-right: 15px;
 }
